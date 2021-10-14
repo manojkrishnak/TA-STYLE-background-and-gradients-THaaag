@@ -89,7 +89,7 @@ body{
 .big-box{
     width: 80%;
     height: 300px;
-    background-image: url("../images/rohan-aggarwal-EShGwCZs3Nc-unsplash.jpg"), linear-gradient( rgba(0, 0, 0, 1), #C84320);
+    background: linear-gradient(to right bottom, transparent , rgba(200, 67, 32, 0.8)), url("../images/rohan-aggarwal-EShGwCZs3Nc-unsplash.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
