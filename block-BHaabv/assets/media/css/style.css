@@ -1,0 +1,254 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* custom styles */
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 60px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-dir-row{
+    flex-direction: row;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    background-color: #20222F;
+    color: #ffffff;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+
+
+/* header */
+.heading-lg{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.total-followers{
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #7C829D;
+}
+
+.dark-mode{
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #7c9d9d;
+}
+
+/* .fa-toggle-on{
+    background: linear-gradient(#4F96B8, #3EC89B);
+    font-size: 14px;
+} */
+
+
+/* section-1 */
+
+.box{
+    width: 27%;
+    height: 200px;
+    background-color: #252B43;
+    margin: 1.5%;
+    border-radius: 5px;
+    padding: 30px;
+    /* border-image: linear-gradient(yellow, violet); */
+    /* border-image: linear-gradient(to right, red, violet) 1 stretch; */
+}
+
+.box-1, .box-2{
+    border-top: 3px solid #198FF5;
+}
+
+.box-3{
+    border-top: 3px solid red;
+    border-image: linear-gradient(to right, #f3c37f, #e94081) 1 stretch;
+}
+
+.box-4{
+    border-top: 3px solid #C20429;
+}
+
+
+/* inside boxes user-id */
+.user-id, .category-name{
+    font-size: 10px;
+    font-weight: 500;
+    margin-left: 5px;
+    color: #858EB1;
+}
+
+.fa-facebook-square, .fa-twitter-square{
+    color: #178FF8;
+    /* font-size: 16px; */
+}
+
+.fa-instagram{
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.fa-youtube{
+    color: #000000;
+    background-color: #C20429;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.followers{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.followers-count{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.followers-text{
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: #858EB1;
+    text-transform: uppercase;
+}
+
+.todays-trend{
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.trend-count{
+    margin-left: 5px;
+}
+
+.down{
+    color: #A63C48;
+}
+
+.up{
+    color: #3B9D8C;
+}
+
+
+/* 
+1. instagram gardoient
+2. arrow to be in middle 
+3. up and down colors to be changed
+4. toggle on gradient  */
+
+
+/* section - 2 */
+.heading-sm{
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+
+/* .statistics{
+    flex-wrap: wrap;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+
+.stat-box{
+    flex: 0 1 22.5%;
+    height: 120px;
+    margin: 1.5% 0.75%;
+    padding: 15px;
+    background-color: #252B43;
+    border-radius: 5px;
+}
+
+.stats{
+    display: flex;
+    justify-content: space-between; 
+    flex-direction: column;
+}
+
+
+/* section-2 each box  */
+
+.category-name{
+    font-size: 12px;
+}
+
+.category-count{
+    font-size: 26px;
+    font-weight: 700;
+}
